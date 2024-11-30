@@ -1,0 +1,886 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 53px;
+    /* border: 3px solid green; */
+    background-color: #ac3434;
+}
+
+.brand {
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    color: wheat;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.social {
+    float: right;
+}
+
+.slogo {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+    margin-top: 8%;
+
+}
+
+#search {
+    height: 400px;
+    background-image: url("./foto/foods.jpg");
+    background-size: 100% 400px;
+
+}
+
+#coupons {
+    box-shadow: 0px 0px 3px 3px #812402;
+    border-radius: 3px;
+    height: 350px;
+    width: 41%;
+    background-image: url("./foto/offer.jpg");
+    background-size: 100% 350px;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 113px;
+    margin: auto;
+    z-index: 100;
+    /* visibility: hidden; */
+}
+
+.cross {
+    border: none;
+    float: right;
+    color: azure;
+    font-size: 25px;
+    height: 35px;
+    width: 35px;
+    background-color: inherit;
+    margin: 0 7px;
+}
+
+.logo {
+    background-color: wheat;
+    /* opacity: .8; */
+    height: 70px;
+    width: 12%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 43%;
+    animation: blink 5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        transform: scale(1.1);
+
+    }
+
+    25% {
+        transform: scale(1);
+        background-color: lightgreen;
+    }
+
+    50% {
+        transform: scale(1.1);
+        background-color: #c7c732;
+    }
+
+    75% {
+        transform: scale(1);
+        background-color: tomato;
+
+    }
+
+    100% {
+        transform: scale(1.1);
+        background-color: lightpink;
+
+    }
+
+}
+
+.logotext {
+    font-size: 43px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 15.3%;
+    margin-left: 15.2%;
+    /* margin-left: 27%; */
+
+}
+
+.heading {
+    color: azure;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 13%;
+
+    /* opacity: .7; */
+}
+
+.dropdown {
+    /* border: 1px solid green; */
+    height: 35px;
+    width: 67%;
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 18%;
+}
+
+select {
+    height: inherit;
+}
+
+.selectcity {
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    width: 45%;
+    font-size: 21px;
+    opacity: .7;
+}
+
+.selectrestorent {
+    border: none;
+    border-radius: 3px;
+    width: 54%;
+    font-size: 21px;
+    text-align: center;
+    opacity: .7;
+
+}
+
+#Qsearch {
+    /* border: 1px solid green; */
+    /* height: 570px; */
+    width: 90%;
+    margin: 2% 2% 3% 7%;
+    display: inline-block;
+}
+
+.Qheading {
+    font-weight: 700;
+    font-size: 35px;
+    color: #ac3434;
+}
+
+.Qsubheading {
+    font-size: 18px;
+    color: gray;
+    margin-left: 1%;
+}
+
+/* .container{
+    display: inline-block;
+} */
+.tile {
+    float: left;
+    border-radius: 3px;
+    width: 41%;
+    height: 130px;
+    box-shadow: 0 0 3px 3px gray;
+    margin: 3% 3% 3% 4.3%;
+}
+
+.tile1 {
+    float: left;
+    width: 52%;
+    height: 130px;
+}
+
+.tile1>img {
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+}
+
+.tile1 :hover {
+    opacity: .7;
+}
+
+
+.tile2 {
+    float: right;
+    width: 45%;
+    height: 130px;
+}
+
+.tileheading {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ac3434;
+    text-align: center;
+
+}
+
+.tiletext {
+    color: gray;
+    text-align: center;
+    margin-top: 13%;
+}
+
+footer {
+    border: 1px solid green;
+    height: 93px;
+    background-color: #ac3434;
+    color: khaki;
+}
+
+.ftext {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 1% 0 1% 0;
+}
+
+.footdiv {
+    float: left;
+    line-height: 23px;
+    font-size: 17px;
+    border-right: 1px solid khaki;
+    text-align: center;
+    width: 30%;
+    letter-spacing: 1px;
+    margin-left: 3%;
+}
+
+.noborder {
+    border: none;
+}
+
+.footdiv>ul>li {
+    list-style: none;
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        background-color: lightpink;
+    }
+
+    .tile {
+        width: 25%;
+        height: 130px;
+        margin: 3% 0% 3% 5%;
+    }
+
+    .logo {
+        height: 69px;
+        width: 8%;
+
+    }
+
+    .logotext {
+        font-size: 52px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 33%;
+    }
+
+    .heading {
+
+        font-size: 58px;
+        letter-spacing: 3px;
+        position: absolute;
+        margin-top: 9%;
+        margin-left: 21%;
+    }
+
+    .dropdown {
+        height: 36px;
+        position: absolute;
+        margin-top: 16%;
+        margin-left: 15.3%;
+    }
+
+    .selectcity {
+        font-size: 23px;
+        width: 45%;
+        font-style: 23px;
+    }
+
+    .selectrestorent {
+        font-size: 23px;
+        width: 50%;
+        position: absolute;
+        margin-left: 13px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background-color: lightpink;
+    }
+
+    .tile {
+        width: 25%;
+        height: 130px;
+        margin: 3% 0% 3% 5%;
+    }
+
+    .logo {
+        height: 69px;
+        width: 8%;
+
+    }
+
+    .logotext {
+        font-size: 52px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 33%;
+    }
+
+    .heading {
+
+        font-size: 58px;
+        letter-spacing: 3px;
+        position: absolute;
+        margin-top: 9%;
+        margin-left: 21%;
+    }
+
+    .dropdown {
+        height: 36px;
+        position: absolute;
+        margin-top: 16%;
+        margin-left: 15.3%;
+    }
+
+    .selectcity {
+        font-size: 23px;
+        width: 45%;
+        font-style: 23px;
+    }
+
+    .selectrestorent {
+        font-size: 23px;
+        width: 50%;
+        position: absolute;
+        margin-left: 13px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: #eeb0ee;
+    }
+
+    .logo {
+        height: 75px;
+        width: 9%;
+        position: absolute;
+        margin-top: 1%;
+        margin-left: 45%;
+    }
+
+    .logotext {
+        font-size: 51px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 29%;
+    }
+
+    .heading {
+        font-size: 53px;
+        position: absolute;
+        margin-top: 14%;
+        margin-left: 15%;
+
+    }
+
+    .dropdown {
+        height: 35px;
+        position: absolute;
+        margin-top: 23%;
+        margin-left: 24.3%;
+
+    }
+
+    .selectcity {
+        font-size: 18px;
+        width: 35%;
+    }
+
+    .selectrestorent {
+        font-size: 18px;
+        width: 45%;
+        position: absolute;
+        margin-left: 13px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    body {
+        background-color: #fbd0ab;
+    }
+
+    .tile {
+        float: left;
+        border-radius: 3px;
+        width: 41%;
+        height: 130px;
+        box-shadow: 0 0 3px 3px gray;
+        margin: 3% 3% 3% 4.3%;
+    }
+
+    .heading {
+        font-size: 41px;
+        position: absolute;
+        margin-top: 17%;
+        margin-left: 13%;
+        /* opacity: .7; */
+    }
+
+    .dropdown {
+        height: 32px;
+        position: absolute;
+        margin-top: 27%;
+        margin-left: 25.3%;
+    }
+
+    .selectcity {
+        font-size: 18px;
+    }
+
+    .selectrestorent {
+        font-size: 18px;
+        margin-left: 1%;
+    }
+
+    .logo {
+        height: 67px;
+        width: 12%;
+        position: absolute;
+        margin-left: 43%;
+
+    }
+
+    .logotext {
+        font-size: 52px;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 27%;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    body {
+        background-color: #f3ba93;
+    }
+
+    .tile {
+        width: 80%;
+        height: 130px;
+        margin-left: 8%;
+    }
+
+    .logo {
+        height: 67px;
+        width: 23%;
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 39%;
+    }
+
+    .logotext {
+        font-size: 45px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 9%;
+        margin-left: 32%;
+    }
+
+    .heading {
+        font-size: 35px;
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 9%;
+
+    }
+
+    .dropdown {
+        /* width: 67%; */
+        height: 30px;
+        position: absolute;
+        margin-top: 39%;
+        margin-left: 18%;
+    }
+
+    .selectcity {
+        font-size: 18px;
+        width: 103%;
+    }
+
+    .selectrestorent {
+        font-size: 18px;
+        width: 103%;
+        position: absolute;
+        margin-top: 3.2%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        background-color: #f3ba93;
+    }
+
+    .tile {
+        width: 80%;
+        height: 130px;
+    }
+
+    .logo {
+        height: 67px;
+        width: 23%;
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 39%;
+    }
+
+    .logotext {
+        font-size: 45px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 9%;
+        margin-left: 32%;
+    }
+
+    .heading {
+        font-size: 27px;
+        position: absolute;
+        margin-top: 35%;
+        margin-left: 3%;
+
+    }
+
+    .dropdown {
+        /* width: 67%; */
+        height: 30px;
+        position: absolute;
+        margin-top: 49%;
+        margin-left: 18%;
+    }
+
+    .selectcity {
+        font-size: 18px;
+        width: 103%;
+    }
+
+    .selectrestorent {
+        font-size: 18px;
+        width: 103%;
+        position: absolute;
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        background-color: rgb(204, 238, 204);
+    }
+
+    .tile {
+        width: 90%;
+        margin-left: 9px;
+    }
+
+    .logotext {
+        font-size: 43px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 13%;
+        margin-left: 32%;
+    }
+
+    .heading {
+        font-size: 23px;
+        position: absolute;
+        margin-top: 41%;
+        margin-left: 3%;
+
+    }
+
+    .dropdown {
+        /* width: 67%; */
+        height: 25px;
+        position: absolute;
+        margin-top: 53%;
+        margin-left: 16.3%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-color: #f9e6e9;
+    }
+
+    .tile {
+        width: 80%;
+        height: 130px;
+    }
+
+    .logo {
+        height: 67px;
+        width: 23%;
+        position: absolute;
+        margin-top: 3%;
+        margin-left: 43%;
+    }
+
+    .logotext {
+        font-size: 43px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 15.3%;
+        margin-left: 27%;
+    }
+
+    .heading {
+        font-size: 23px;
+        position: absolute;
+        margin-top: 45%;
+        margin-left: 3%;
+
+    }
+
+    .dropdown {
+        /* width: 67%; */
+        height: 30px;
+        position: absolute;
+        margin-top: 57%;
+        margin-left: 18%;
+    }
+
+    .selectcity {
+        width: 103%;
+        font-size: 18px;
+    }
+
+    .selectrestorent {
+        font-size: 18px;
+        width: 102%;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 1%;
+
+    }
+}
+
+@media All and (min-width:321px) and (max-width:374px) {
+
+    /* @media screen and (max-width: 360px) { */
+    body {
+        background-color: rgb(204, 238, 204);
+    }
+
+    .tile {
+        width: 90%;
+        height: 130px;
+    }
+
+    .logo {
+        height: 67px;
+        width: 23%;
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 39%;
+    }
+
+    .logotext {
+        font-size: 43px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 15.3%;
+        margin-left: 27%;
+    }
+
+    .heading {
+        font-size: 21px;
+        position: absolute;
+        margin-top: 49%;
+        margin-left: 4.3%;
+
+    }
+
+    .dropdown {
+        /* width: 67%; */
+        height: 25px;
+        position: absolute;
+        margin-top: 61%;
+        margin-left: 16.3%;
+    }
+
+    .selectcity {
+        width: 103%;
+        font-size: 18px;
+    }
+
+    .selectrestorent {
+        font-size: 18px;
+        width: 103%;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        background-color: rgb(204, 238, 204);
+    }
+
+    .tile {
+        width: 80%;
+        height: 130px;
+    }
+
+    .logo {
+        height: 53px;
+        width: 23%;
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 39%;
+    }
+
+    .logotext {
+        font-size: 39px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 31%;
+    }
+
+    .heading {
+        font-size: 18px;
+        position: absolute;
+        margin-top: 49%;
+        margin-left: 3%;
+
+    }
+
+    .dropdown {
+        /* width: 67%; */
+        height: 25px;
+        position: absolute;
+        margin-top: 61%;
+        margin-left: 16.3%;
+    }
+
+    .selectcity {
+        width: 103%;
+        font-size: 18px;
+        margin-top: 7%;
+    }
+
+    .selectrestorent {
+        font-size: 18px;
+        width: 103%;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    body {
+        background-color: rgb(204, 238, 204);
+    }
+
+    .brand {
+        float: left;
+        font-size: 25px;
+        font-weight: 700;
+        color: wheat;
+        margin-left: 1%;
+        margin-top: 5.2%;
+    }
+
+    .slogo {
+        border-radius: 50%;
+        height: 25px;
+        width: 21px;
+        margin-right: 7px;
+        margin-top: 17%;
+    }
+
+    .tile {
+        width: 90%;
+        height: 90px;
+        margin-left: 3%;
+    }
+
+    .tile1 {
+        float: left;
+        width: 52%;
+        height: 90px;
+    }
+
+    .logo {
+        height: 67px;
+        width: 23%;
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 39%;
+    }
+
+    .logotext {
+        font-size: 43px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 15.3%;
+        margin-left: 20%;
+    }
+
+    .heading {
+        font-size: 13px;
+        position: absolute;
+        margin-top: 49%;
+        margin-left: 7%;
+
+    }
+
+    .Qsubheading {
+        font-size: 13px;
+        color: gray;
+        margin-left: 1%;
+    }
+
+    .dropdown {
+        /* width: 67%; */
+        height: 18px;
+        position: absolute;
+        margin-top: 65%;
+        margin-left: 16.3%;
+    }
+
+    .selectcity {
+        width: 103%;
+        font-size: 13px;
+    }
+
+    .selectrestorent {
+        font-size: 13px;
+        width: 103%;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 1%;
+    }
+}

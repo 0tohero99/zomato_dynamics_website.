@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Zomato</title>
+    <link rel="icon" href="./zonato//foto/logo.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./urls.js"></script>
+    <script src="./style.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">New learner</div>
+        <div class="social">
+            <a href=""><img src="./foto/fb.png" alt="fb" class="slogo"></a>
+            <a href=""><img src="./foto/insta.png" alt="insta" class="slogo"></a>
+            <a href=""><img src="./foto/youtube.png" alt="youtube" class="slogo"></a>
+        </div>
+    </header>
+    <div id="search">
+        <div id="coupons"><button class="cross" onclick="closecoupons()">&times;</button></div>
+        <div class="logo"><span class="logotext">D!</span></div>
+        <div class="heading">Find Best Place Near To You</div>
+        <div class="dropdown">
+            <select class="selectcity" id="city"onChange="get_rest()">
+                <option>---Select City---</option>
+                <!-- <option value="">Karnataka</option>
+                <option value="">Kolkata</option> -->
+            </select>
+            <select class="selectrestorent" id="rest">
+                <option> ---Select Restaurent---</option>
+                <!-- <option value=""> ---Veg Restaurent---</option>
+                <option value=""> ---Non-Veg Restaurent---</option> -->
+            </select>
+        </div>
+    </div>
+    <div id="Qsearch">
+        <div class="Qheading">Quick Search</div>
+        <span class="Qsubheading">Find Restaurents By Meal Types !</span>
+        <div class="container">
+            <div class="tile">
+                <div class="tile1">
+                    <img src="./foto/veg-thali.png" alt="">
+                </div>
+                <div class="tile2">
+                    <div class="tileheading">Breakfast</div>
+                    <div class="tiletext">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile1">
+                    <img src="./foto/lunch.webp" alt="">
+                </div>
+                <div class="tile2">
+                    <div class="tileheading">Lunch</div>
+                    <div class="tiletext">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile1">
+                    <img src="./foto/samoshachart.jpg" alt="">
+                </div>
+                <div class="tile2">
+                    <div class="tileheading">Snaks</div>
+                    <div class="tiletext">Best Deal For Breakfast</div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile1">
+                    <img src="./foto/veg-thali.png" alt="">
+                </div>
+                <div class="tile2">
+                    <div class="tileheading">Dinner</div>
+                    <div class="tiletext">Best Deal For Breakfast</div>
+
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile1">
+                    <img src="./foto/drinks.jpg" alt="">
+                </div>
+                <div class="tile2">
+                    <div class="tileheading">Drinks</div>
+                    <div class="tiletext">Best Deal For Breakfast</div>
+
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile1">
+                    <img src="./foto/zim centre.jpg" alt="">
+                </div>
+                <div class="tile2">
+                    <div class="tileheading">Zim Centre</div>
+                    <div class="tiletext">Best Deal For Breakfast</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="ftext">&copy;rights New Learner 2024 </p>
+        <div class="footdiv">
+            <ul>
+                <li>Bike on rent !</li>
+                <li>Work here !</li>
+            </ul>
+        </div>
+        <div class="footdiv">
+            <ul>
+                <li>Contact here!</li>
+                <li>Complaints !</li>
+            </ul>
+        </div>
+        <div class="footdiv  noborder">
+            <ul>
+                <li>Bookings !</li>
+                <li>About !</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        window.onload = getcity();
+        window.onload = loadcoupons()
+    </script>
+</body>
+
+</html>
